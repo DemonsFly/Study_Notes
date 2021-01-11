@@ -1,0 +1,23 @@
+//œ‘ æÕº∆¨
+#include <iostream>
+#include <opencv2/opencv.hpp>
+using namespace std;
+using namespace cv;
+
+int main()
+{
+	Mat src = imread("D:\\Local_Workstation\\sys_File\\GitHub_worksation\\Study_Notes\\OpenCV_Notes\\chap01 OpenCV≥ıÃΩ\\chap01 OpenCV≥ıÃΩ\\src\\logo.png");
+	if (src.empty())
+	{
+		cout << "∂¡»° ß∞‹" << endl;
+
+	}
+	else
+	{
+		namedWindow("EXAMPLE", WINDOW_AUTOSIZE);	// ø… °¬‘
+		imshow("EXAMPLE", src);
+	}
+	waitKey(0);	//µ»¥˝º¸≈Ã ‰»Î
+	destroyWindow("EXAMPLE");	//ø… °¬‘
+	return 0;
+}
